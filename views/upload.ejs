@@ -1,0 +1,31 @@
+<%layout('./layouts/boilerplate')%>
+<h1 class="text-center mb-3">Upload Images</h1>
+<div class="col-6 offset-3">
+  <form
+    action="/user/<%=user._id%>?_method=PUT"
+    method="POST"
+    novalidate
+    class="needs-validation"
+    enctype="multipart/form-data"
+  >
+    <!-- add images input and label here -->
+    <div class="input-group mb-3">
+      <input
+        type="file"
+        class="form-control"
+        name="image"
+        multiple
+        id="image"
+      />
+      <label class="input-group-text" for="image">Add Images</label>
+    </div>
+    <button class="d-block btn btn-info mb-3 mt-5">Upload</button>
+  </form>
+  <p class="text-muted">
+    <small
+      >*Note : It may take some time to upload the images depending upon the
+      number of images selected.</small
+    >
+  </p>
+  <a class="btn btn-primary" href="/user/<%=user._id%>">Back To Profile</a>
+</div>

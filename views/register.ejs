@@ -1,0 +1,92 @@
+<%layout('./layouts/boilerplate')%>
+<div class="container d-flex justify-content-center align-items-center mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+      <div class="card shadow mb-5">
+        <img
+          crossorigin="anonymous"
+          src="/register.jpg"
+          alt=""
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h3 class="card-title text-center">Register</h3>
+          <form
+            action="/register"
+            method="post"
+            class="needs-validation"
+            novalidate
+          >
+            <div class="mb-3">
+              <label class="form-label" for="username">Username</label>
+              <input
+                class="form-control"
+                type="text"
+                id="username"
+                name="username"
+                required
+                autofocus
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="first_name">First Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id="first_name"
+                name="first_name"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="last_name">Last Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id="last_name"
+                name="last_name"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-control"
+                type="text"
+                id="email"
+                name="email"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <!-- <div class="mb-3">
+    <label class="form-label" for="diplay_image">Profile Picture</label>
+    <input
+      class="form-control"
+      type="text"
+      id="diplay_image"
+      name="diplay_image"
+    />
+    <div class="valid-feedback">Looks good!</div>
+  </div> -->
+            <div class="mb-3">
+              <label class="form-label" for="password">Password</label>
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <button class="btn btn-success">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

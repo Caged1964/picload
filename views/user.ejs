@@ -1,0 +1,27 @@
+<%layout('./layouts/boilerplate')%>
+<section class="container">
+  <div class="d-flex">
+    <div class="left container">
+      <img src="/temp_profile_pic.png" alt="profile picture" />
+    </div>
+    <div class="right container">
+      <h2><%=user.username%></h2>
+      <p><%=user.first_name%> <%=user.last_name%></p>
+      <p><%=user.email%></p>
+      <a class="btn btn-info" href="/user/<%=user._id%>/upload"
+        >Upload Image(s)</a
+      >
+      <a class="btn btn-danger" href="/user/<%=user._id%>/remove"
+        >Delete Image(s)</a
+      >
+    </div>
+  </div>
+  <div class="mt-4">
+    <h2 class="mt-5 text-center"><u>Uploaded Images</u></h2>
+    <% if(user.images.length) {%> <% user.images.forEach(function(img, i) { %>
+    <img src="<%=img.disp %>" class="img-thumbnail" alt="" />
+    <% })%> <% } else{%>
+    <h3 class="mt-5 text-center">Nothing to display ...</h3>
+    <% } %>
+  </div>
+</section>
