@@ -60,15 +60,15 @@ npm start
 ## Screenshots
 
 1. Homepage
-   ![Home Page](Screenshots\Homepage.png)
+   ![Home Page](Screenshots/Homepage.png)
 2. Registration Page
-   ![Registeration Page](Screenshots\Registeration_Page.png)
+   ![Registeration Page](Screenshots/Registeration_Page.png)
 3. Login Page
-   ![Login Page](Screenshots\Login_Page.png)
+   ![Login Page](Screenshots/Login_Page.png)
 4. User Profile
-   ![User Profile](Screenshots\User_profile.png)
-   ![User Profile](Screenshots\user_profile_2.png)
+   ![User Profile](Screenshots/User_profile.png)
+   ![User Profile](Screenshots/user_profile_2.png)
 5. Uplaoding Images
-   ![Upload](Screenshots\upload_images.png)
+   ![Upload](Screenshots/upload_images.png)
 6. Deleting Images
-   ![Delete](Screenshots\delete_images.png)
+   ![Delete](Screenshots/delete_images.png)
